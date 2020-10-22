@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Michelle's crafts</title>
+</head>
+
+
+
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">Michelle's Crafts</a>
+                </div>
+                <div class="header-links">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>Shopping Categories</h3>
+                <button class="sidebar-close-button" onclick="closeMenu()">x
+                </button>
+                <ul>
+                    <li>
+                        <a href="index.html">Candles</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Soap</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Supplies</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                        <!-- product candle  -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+<!-- product soap -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+                        <!-- product supplies -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+<!-- new product -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+                        <!-- new product -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+                        <!-- new product -->
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/snowmancandle.jpg" alt="product" />
+                                <div class="product-name">
+                                    <a href="product.html">
+                                        Snowman Candle
+                                    </a>
+                                </div>
+                                <div class="product-brand">lorem ipsum</div>
+                                <div class="product-price">$30</div>
+                                <div class="product-rating">4.5 start (10 reviews)</div>
+                         </div>   
+                        </li>
+                   
+                    </ul>
+                </div>
+            </main>
+
+            <footer class="footer">@2020 N. Teaca</footer>
+        </div>
+        <script>
+            function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+            }
+            function closeMenu() {
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+
+</html>
