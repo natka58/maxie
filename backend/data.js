@@ -8,7 +8,8 @@ export default {
         price: 30,
         brand: 'lorem ipsum',
         rating: 4.5,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 15
 
     },
     {
@@ -19,7 +20,8 @@ export default {
     price: 25,
     brand: 'lorem ipsum',
     rating: 4.2,
-    numReviews: 7
+    numReviews: 7,
+    countInStock: 7
 
 },
 {
@@ -30,7 +32,8 @@ export default {
     price: 40,
     brand: 'lorem ipsum',
     rating: 5,
-    numReviews: 100
+    numReviews: 100,
+    countInStock: 20
 
 },
 ]
