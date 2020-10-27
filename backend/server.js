@@ -4,9 +4,10 @@ import dotenv from 'dotenv';
 import config from './config';
 import mongoose from 'mongoose';
 import userRoute from './routes/userRoute';
+import bodyParser from 'body-parser';
 const app = express();
 
-// dotenv.config();
+dotenv.config();
 
 const mongodbUrl = config.MONGODB_URL;
 mongoose.connect(mongodbUrl, {
@@ -15,6 +16,7 @@ mongoose.connect(mongodbUrl, {
    useCreateIndex: true,
 }).catch(error => cpnsole.log(error.reason));
 
+app.use(bodyParser.json());
 app.use('/api/users', userRoute);
 
 app.get("/api/products/:id", (req, res) => {
