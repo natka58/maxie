@@ -67,7 +67,9 @@ function RegisterScreen (props) {
             </li>
             <li>
               Already have an account?
-              <Link to={redirect === "/" ? "signin" : "signin?redirect=" + redirect} className="button secondary text-center" >Create your Michelle's Crafts account</Link>
+              <Link to="/signin">Sign-in</Link>
+              
+              {/* <Link to={redirect === "/" ? "signin" : "signin?redirect=" + redirect} className="button secondary text-center" >Create your Michelle's Crafts account</Link> */}
     
             </li>
     
