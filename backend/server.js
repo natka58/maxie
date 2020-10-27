@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 import userRoute from './routes/userRoute';
 const app = express();
 
-dotenv.config();
+// dotenv.config();
 
 const mongodbUrl = config.MONGODB_URL;
 mongoose.connect(mongodbUrl, {

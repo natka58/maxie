@@ -19,6 +19,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique:true,
+        index:true,
+        dropDups: true,
+        sparse:true,
         match: [/.+@.+\..+/, 'Must use a valid email address'],
     },
     password: 
@@ -28,11 +31,11 @@ const userSchema = new mongoose.Schema({
         minlength: 5
     },
     isAdmin: 
-    {
-        type: Boolean,
-        reguired: true,
-        default: false
-    }
+    { 
+      type: Boolean, 
+      required: true, 
+      default: false 
+    },
 });
 
 // hash user password
