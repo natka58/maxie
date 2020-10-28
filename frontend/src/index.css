@@ -126,11 +126,13 @@ ul.review {
   margin: 0.1rem;
 }
 .rating span:last-child {
-  color: #444444;
-  font-size: 1.4rem;
+  color: #ec0f0f;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 a > .rating > span:last-child {
   color: #0000ff;
+  font-size: 1.8rem;
 }
 
 /* Sidebar */
@@ -353,7 +355,7 @@ tbody > tr:nth-child(odd) {
 }
 .checkout-steps > div.active {
   border-top: 0.3rem lightblue solid;
-  color: lightblue;
+  color: rgb(96, 128, 139);
 }
 
 /* Place Order */
@@ -396,7 +398,7 @@ tbody > tr:nth-child(odd) {
 .placeorder-action > ul > li:last-child {
   font-size: 2rem;
   font-weight: bold;
-  color: lightblue;
+  color: rgb(70, 95, 103);
 }
 .placeorder-actions-payment > div {
   width: 100%;
