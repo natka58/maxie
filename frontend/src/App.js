@@ -7,6 +7,8 @@ import ProductScreen from './screens/ProductScreen';
 import SigninScreen from './screens/SigninScreen';
 import { useSelector } from 'react-redux';
 import RegisterScreen from './screens/RegisterScreen';
+import ProductsScreen from './screens/ProductsScreen';
+
 function App() {
    
     const userSignin = useSelector(state=>state.userSignin);
@@ -63,6 +65,7 @@ const closeMenu = () => {
           <Route path="/" exact={true} component={HomeScreen} />
           <Route path="/signin" component={SigninScreen} />
           <Route path="/register" component={RegisterScreen} />
+          <Route path="/products" component={ProductsScreen} />
         </div>
     </main>
 
