@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
-    "build": " cd frontend && npm install && npm run build && cd ..",
-    "heroku-postbuild-x": "npm run build && cd frontend && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm install && npm run build",
+    "serve": "cd frontend && npm install && npm run build && cd .. && node --experimental-modules backend/server.js",
+    "build": " cd frontend && npm install && npm run build && cd .."
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
